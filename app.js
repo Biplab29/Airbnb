@@ -1,5 +1,5 @@
 if(process.env.NODE_ENV != 'production'){
-    require('dotenv').config()
+ require('dotenv').config()
 
 }
 
@@ -26,7 +26,8 @@ const { error } = require('console');
 
 const app = express();
 // const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
-const dbUrl = process.env.ATLASTDB_URL;
+
+const dbUrl = "mongodb+srv://biplabmahatajk:Biplab29092000@cluster0.lzb3btu.mongodb.net/wanderlust";
 console.log(`Using MongoDB URL: ${dbUrl}`);
 
 main()
